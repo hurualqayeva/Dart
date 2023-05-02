@@ -1,6 +1,7 @@
+import 'dart:io';
 import 'dart:typed_data';
 
-main() {
+main() { 
   int a = 10;
   double b = 50.5;
   a.toDouble();
@@ -17,6 +18,7 @@ main() {
   print(text);
 
   //Switch case
+  int age=int.parse(stdin.readLineSync().toString());
 
   String fileformat = 'png';
   String eMessage = '404 Not found';
