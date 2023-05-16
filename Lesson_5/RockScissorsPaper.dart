@@ -51,6 +51,7 @@ void main() {
             }
         }
     }
+    print("Your score :${score[1]} and Computer Score ${score[0]}");
 }
 String getInitials(String name) => name.isNotEmpty
 ? name.trim().split(' ').map((l) => l[0]).take(2).join()
