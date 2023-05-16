@@ -5,7 +5,7 @@ void main() {
     List<int> score=[0,0];
     List<String> names=['rock','scissors','paper'];
 
-    while(score[0]!=3 || score[1]==3) {
+    while(score[0]!=3 || score[1]!=3) {
         String randomItem = (names.toList()..shuffle()).first;
         print('Enter the value');
         String userChoice=stdin.readLineSync().toString().toLowerCase();
