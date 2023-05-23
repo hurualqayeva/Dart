@@ -13,7 +13,7 @@ main(){
 counter(list);
 }
 
-counter(list){
+counter(List list){
 
 List elements=[];
 list.forEach((element) {elements.add(element.toLowerCase());});
