@@ -1,3 +1,1 @@
-# Dart
-# ExercisesOfDart
-# DartExercises
+# Dart exercises
