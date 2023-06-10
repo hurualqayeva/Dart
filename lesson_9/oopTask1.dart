@@ -3,57 +3,33 @@
 // ! display func. hamisina aiddir.
 // ! her birinin ozunun fildleri var
 
+import 'AnimalClass.dart';
+import 'birds.dart';
+import 'mammal.dart';
+import 'reptile.dart';
+
 /// Mammal- novu, yasi
 /// Birds qanad uzunlugu, novunu,
 /// Reptile- novu, zeherli olub olmadigi(bool)
 
 main(){
-Animal animal1=Animal('Cat');
+Animal animal1=Animal('Cat',false);
 animal1.display();
-Mammal mammal1 =Mammal(120, 'Monkey');
+Mammal mammal1 =Mammal(120, 'Monkey',false);
 mammal1.display();
-Birds birds1=Birds(24, 'Parrot');
+Birds birds1=Birds(24, 'Parrot',false);
 birds1.display();
-Reptile reptile= Reptile(true, 'fish');
+Reptile reptile= Reptile(true, 'fish',true);
 reptile.display();
-}
-class Animal{
-String type;
-Animal(this.type);
-
-
-void display(){
-  print('Animal type: $type');
-
-}
+Crocodile crocodile= Crocodile('Crocodilians', true, 'Reptile', true);
+crocodile.display();
+Eagle eagle =Eagle('Eagle', 15, 'bird', false);
+eagle.display();
+Coala coala=Coala('Coala', 23, 'Mammal', true);
+coala.display();
 }
 
-class Mammal extends Animal{
-  
-  int AgeOfMammal;
-  Mammal(this.AgeOfMammal,super.type);
-  @override
-  void display(){
-    print('Age: $AgeOfMammal type:${super.type}');
-  }
 
-}
 
-class Birds extends Animal{
-  int LengthOfWing;
-  Birds(this.LengthOfWing,super.type);
-  @override
-   void display(){
-    print('Length: $LengthOfWing type:${super.type}');
-  }
 
-}
-class Reptile extends Animal{
-  bool isPoison;
-  Reptile(this.isPoison,super.type);
-@override
-   void display(){
-    print('Poison: $isPoison type:${super.type}');
-  }
-}
 
