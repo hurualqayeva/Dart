@@ -8,5 +8,6 @@ void main(List<String> args) {
   myPlaylist.playPlaylist();
 
   song2.pause();
+  myPlaylist.shufflePlaylist();
 
 }
