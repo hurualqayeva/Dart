@@ -30,6 +30,5 @@ class MediaFile implements Playable{
 
 mixin Shuffleable{
 shufflePlaylist(){
-
 }
 }
